@@ -3,6 +3,10 @@
 .env
 .env.backup
 .env.production
+/bootstrap/cache/*.php
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
 firebase-credentials.json
 .phpactor.json
 .phpunit.result.cache
