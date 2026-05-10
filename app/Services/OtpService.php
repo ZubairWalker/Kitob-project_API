@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Log;
 
 class OtpService
 {
-    protected $eskizService;
+    protected $twilioService;
 
-    public function __construct(EskizService $eskizService)
+    public function __construct(TwilioService $twilioService)
     {
-        $this->eskizService = $eskizService;
+        $this->twilioService = $twilioService;
     }
 
     /**
@@ -38,7 +38,7 @@ class OtpService
             return true;
         }
 
-        return $this->eskizService->sendSms($phone, "Kitob: Tasdiqlash kodi: $code");
+        return $this->twilioService->sendSms($phone, "Kitob: Tasdiqlash kodi: $code");
     }
 
     /**

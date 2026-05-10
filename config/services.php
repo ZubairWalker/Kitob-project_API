@@ -40,4 +40,10 @@ return [
         'password' => env('ESKIZ_PASSWORD'),
     ],
 
+    'twilio' => [
+        'sid' => env('TWILIO_SID'),
+        'token' => env('TWILIO_TOKEN'),
+        'from' => env('TWILIO_PHONE'),
+    ],
+
 ];
